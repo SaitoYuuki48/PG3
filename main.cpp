@@ -2,6 +2,7 @@
 
 template <typename Type1, typename Type2>
 
+//è¨Ç≥Ç¢ílÇï‘Ç∑
 Type1 Min(Type1 a, Type2 b) {
 	if (a < b) {
 		return static_cast<Type1> (a);
@@ -23,9 +24,9 @@ int main() {
 	char b = 'B';
 
 	printf("%d\n", Min<int>(12, 10));
-	printf("%d\n", Min<float>(12.1f, 10.5f));
-	printf("%d\n", Min<double>(12.1f, 10.5f));
-	printf("%d\n", Min<char>(a, b));
+	printf("%f\n", Min<float>(12.1f, 10.5f));
+	printf("%lf\n", Min<double>(12.1, 10.5));
+	printf("\n", Min<char>(a, b));
 
 	return 0;
 }
