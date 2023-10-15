@@ -1,20 +1,23 @@
 #include<stdio.h>
 
-int Recursive(int n) {
-	if (n <= 1) {
-		return (1);
+int Recursive(int n, int o, int p) {
+	if (n <= 0) {
+		return o;
 	}
-
-	return (n * Recursive(n - 1));
+	return Recursive(n - 1, o += p, p * 2 - 50);
 }
 
-
 int main() {
-	int n = 10; //ŠKæ‚·‚é’l
-	int result; //ŒvŽZŒ‹‰Ê
+	int n = 3;  //ŠKæ‚·‚é’lA“­‚¢‚½ŽžŠÔ
+	int o = 0;
+	int p = 100; //Å‰‚ÌŽž‹‹
+	int normal = 1072;
 
-	result = Recursive(n);
-	printf("%d‚ÌŠKæ = %d\n", n, result);
+	int result;
+	result = Recursive(n, o, p);
+
+	printf("Ä‹A“I‚È’À‹à‘ÌŒn %d\n", result);
+	printf("3ŽžŠÔ“­‚¢‚½ˆê”Ê’À‹à‘ÌŒn %d\n", normal * n);
 
 	return 0;
 }
