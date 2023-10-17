@@ -8,7 +8,7 @@ int Recursive(int n, int o, int p) {
 }
 
 int main() {
-	int n = 3;  //階乗する値、働いた時間
+	int n = 8;  //階乗する値、働いた時間
 	int o = 0;
 	int p = 100; //最初の時給
 	int normal = 1072;
@@ -16,8 +16,8 @@ int main() {
 	int result;
 	result = Recursive(n, o, p);
 
-	printf("再帰的な賃金体系 %d\n", result);
-	printf("3時間働いた一般賃金体系 %d\n", normal * n);
+	printf("%d時間働いた再帰的な賃金体系 %d\n", n, result);
+	printf("%d時間働いた一般賃金体系 %d\n", n, normal * n);
 
 	return 0;
 }
