@@ -1,22 +1,22 @@
 #pragma once
 
-template <typename Type>
+template <typename Type1, typename Type2>
 
 class Box
 {
 public:
-	Type n1;
-	Type n2;
+	Type1 n1;
+	Type2 n2;
 
-	Box(Type n1, Type n2) :n1(n1), n2(n2) {};
+	Box(Type1 n1, Type2 n2) :n1(n1), n2(n2) {};
 
-	Type Min() {
+	Type1 Min() {
 		if (n1 < n2) {
-			return static_cast<Type>(n1);
+			return static_cast<Type1>(n1);
 		}
 
 		if (n1 > n2) {
-			return static_cast<Type>(n2);
+			return static_cast<Type2>(n2);
 		}
 	}
 };
