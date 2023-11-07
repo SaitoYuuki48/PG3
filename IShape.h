@@ -4,9 +4,7 @@ class IShape
 {
 public:
 
-	virtual void size() = 0;
+	virtual void Size() = 0;
 
-	virtual void draw() = 0;
-
-protected:
+	virtual void Draw() = 0;
 };

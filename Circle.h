@@ -3,6 +3,14 @@
 class Circle : public IShape
 {
 public:
-	void 
+	void Size();
+
+	void Draw();
+
+private:
+	//”¼Œa
+	float radius = 5;
+	//“š‚¦
+	float answer = 0;
 };
 
