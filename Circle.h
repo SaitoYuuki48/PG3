@@ -1,5 +1,8 @@
 #pragma once
-class Circle
+#include "IShape.h"
+class Circle : public IShape
 {
+public:
+	void 
 };
 
