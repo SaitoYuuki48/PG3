@@ -3,6 +3,10 @@
 class Circle : public IShape
 {
 public:
+	Circle();
+
+	~Circle();
+
 	void Size();
 
 	void Draw();
